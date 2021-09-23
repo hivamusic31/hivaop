@@ -374,7 +374,7 @@ async def m_cb(b, cb):
             if callsmusic.queues.is_empty(chat_id):
                 callsmusic.pytgcalls.leave_group_call(chat_id)
                 
-                await cb.message.edit('- Rʸ͢͢THM🆇 No More Playlist..\n- Leaving VC!')
+                await cb.message.edit('- HivaMusicOP No More Playlist..\n- Leaving VC!')
             else:
                 callsmusic.pytgcalls.change_stream(
                     chat_id,
@@ -382,7 +382,7 @@ async def m_cb(b, cb):
                 )
                 await cb.answer('Skipped')
                 await cb.message.edit((m_chat, qeue), reply_markup=r_ply(the_data))
-                await cb.message.reply_text(f'- Rʸ͢͢THM🆇 Skipped track\n- Now Playing **{qeue[0][0]}**')
+                await cb.message.reply_text(f'- HivaMusicOP Skipped track\n- Now Playing **{qeue[0][0]}**')
 
     else:      
         if chat_id in callsmusic.pytgcalls.active_calls:
@@ -419,15 +419,15 @@ async def play(_, message: Message):
                               invitelink = await _.export_chat_invite_link(chid)
                           except:
                               await lel.edit(
-                                  "<b>Add Rʸ͢͢THM🆇 as admin of yor group first</b>",
+                                  "<b>Add HivaMusicOP as admin of yor group first</b>",
                               )
                               return
 
                           try:
                               await USER.join_chat(invitelink)
-                              await USER.send_message(message.chat.id,"Rʸ͢͢THM🆇 joined this group for playing music in VC")
+                              await USER.send_message(message.chat.id,"HivaMusicOP joined this group for playing music in VC")
                               await lel.edit(
-                                  "<b>Rʸ͢͢THM🆇 helper userbot joined your chat</b>",
+                                  "<b>HivaMusicOP helper userbot joined your chat</b>",
                               )
 
                           except UserAlreadyParticipant:
@@ -436,7 +436,7 @@ async def play(_, message: Message):
                               #print(e)
                               await lel.edit(
                                   f"<b>🔴 Flood Wait Error 🔴 \nUser {user.first_name} couldn't join your group due to heavy requests for userbot! Make sure user is not banned in group."
-                                  "\n\nOr manually add Rʸ͢͢THM🆇 to your Group and try again</b>",
+                                  "\n\nOr manually add HivaMusicOP to your Group and try again</b>",
                               )
                               pass
     try:
@@ -460,7 +460,7 @@ async def play(_, message: Message):
     for i in message.command[1:]:
         query += ' ' + str(i)
     print(query)
-    await lel.edit("**Rʸ͢͢THM🆇__Processing Your Song__**")
+    await lel.edit("**HivaMusicOP__Processing Your Song__**")
     ydl_opts = {"format": "bestaudio[ext=m4a]"}
     try:
         results = YoutubeSearch(query, max_results=1).to_dict()
@@ -476,7 +476,7 @@ async def play(_, message: Message):
         views = results[0]["views"]
 
     except Exception as e:
-        await lel.edit("Rʸ͢͢THM🆇 Song not found.Try another song or maybe spell it properly.")
+        await lel.edit("HivaMusicOP Song not found.Try another song or maybe spell it properly.")
         print(str(e))
         return
 
@@ -509,7 +509,7 @@ async def play(_, message: Message):
         qeue.append(appendable)
         await message.reply_photo(
         photo="final.png", 
-        caption=f"#⃣ Rʸ͢͢THM🆇 Your requested song **queued** at position {position}!",
+        caption=f"#⃣ HivaMusicOP Your requested song **queued** at position {position}!",
         reply_markup=keyboard)
         os.remove("final.png")
         return await lel.delete()
@@ -541,13 +541,13 @@ async def play(_, message: Message):
 )
 async def deezer(client: Client, message_: Message):
     global que
-    lel = await message_.reply("**Rʸ͢͢THM🆇__Processing__**")
+    lel = await message_.reply("**HivaMusicOP__Processing__**")
     administrators = await get_administrators(message_.chat)
     chid = message_.chat.id
     try:
         user = await USER.get_me()
     except:
-        user.first_name =  "Group Music X"
+        user.first_name =  "HivaMusicOP"
     usar = user
     wew = usar.id
     try:
@@ -560,13 +560,13 @@ async def deezer(client: Client, message_: Message):
                               invitelink = await client.export_chat_invite_link(chid)
                           except:
                               await lel.edit(
-                                  "<b>Add Rʸ͢͢THM🆇 as admin of yor group first</b>",
+                                  "<b>Add HivaMusicOP as admin of yor group first</b>",
                               )
                               return
 
                           try:
                               await USER.join_chat(invitelink)
-                              await USER.send_message(message_.chat.id,"Rʸ͢͢THM🆇 joined this group for playing music in VC")
+                              await USER.send_message(message_.chat.id,"HivaMusicOP joined this group for playing music in VC")
                               await lel.edit(
                                   "<b>helper userbot joined your chat</b>",
                               )
@@ -577,7 +577,7 @@ async def deezer(client: Client, message_: Message):
                               #print(e)
                               await lel.edit(
                                   f"<b>🔴 Flood Wait Error 🔴 \nUser {user.first_name} couldn't join your group due to heavy requests for userbot! Make sure user is not banned in group."
-                                  "\n\nOr manually add Rʸ͢͢THM🆇 to your Group and try again</b>",
+                                  "\n\nOr manually add HivaMusicOP to your Group and try again</b>",
                               )
                               pass
     try:
@@ -593,7 +593,7 @@ async def deezer(client: Client, message_: Message):
     text = message_.text.split(" ", 1)
     queryy = text[1]
     res = lel
-    await res.edit(f"Rʸ͢͢THM🆇Searching 👀👀👀 for `{queryy}` on deezer")
+    await res.edit(f"HivaMusicOP Searching 👀👀👀 for `{queryy}` on deezer")
     try:
         arq = ARQ("https://thearq.tech")
         r = await arq.deezer(query=queryy, limit=1)
@@ -604,7 +604,7 @@ async def deezer(client: Client, message_: Message):
         url = r[0]["url"]
     except:
         await res.edit(
-            "Rʸ͢͢THM🆇 Found Literally Nothing, You Should Work On Your English!"
+            "HivaMusicOP Found Literally Nothing, You Should Work On Your English!"
         )
         is_playing = False
         return
@@ -671,13 +671,13 @@ async def deezer(client: Client, message_: Message):
 )
 async def jiosaavn(client: Client, message_: Message):
     global que
-    lel = await message_.reply("**Rʸ͢͢THM🆇__Processing__**")
+    lel = await message_.reply("**HivaMusicOP__Processing__**")
     administrators = await get_administrators(message_.chat)
     chid = message_.chat.id
     try:
         user = await USER.get_me()
     except:
-        user.first_name =  "Group Music X"
+        user.first_name =  "HivaMusicOP"
     usar = user
     wew = usar.id
     try:
@@ -690,15 +690,15 @@ async def jiosaavn(client: Client, message_: Message):
                               invitelink = await client.export_chat_invite_link(chid)
                           except:
                               await lel.edit(
-                                  "<b>Add Rʸ͢͢THM🆇 as admin of yor group first</b>",
+                                  "<b>Add HivaMusicOP as admin of yor group first</b>",
                               )
                               return
 
                           try:
                               await USER.join_chat(invitelink)
-                              await USER.send_message(message_.chat.id,"Rʸ͢͢THM🆇 joined this group for playing music in VC")
+                              await USER.send_message(message_.chat.id,"HivaMusicOP joined this group for playing music in VC")
                               await lel.edit(
-                                  "<b>Rʸ͢͢THM🆇 helper userbot joined your chat</b>",
+                                  "<b>HivaMusicOP helper userbot joined your chat</b>",
                               )
 
                           except UserAlreadyParticipant:
@@ -707,7 +707,7 @@ async def jiosaavn(client: Client, message_: Message):
                               #print(e)
                               await lel.edit(
                                   f"<b>🔴 Flood Wait Error 🔴 \nUser {user.first_name} couldn't join your group due to heavy requests for userbot! Make sure user is not banned in group."
-                                  "\n\nOr manually add Rʸ͢͢THM🆇 to your Group and try again</b>",
+                                  "\n\nOr manually add HivaMusicOP to your Group and try again</b>",
                               )
                               pass
     try:
@@ -715,7 +715,7 @@ async def jiosaavn(client: Client, message_: Message):
         #lmoa = await client.get_chat_member(chid,wew)
     except:
         await lel.edit(
-            "<i> Rʸ͢͢THM🆇 helper Userbot not in this chat, Ask admin to send /play command for first time or add assistant manually</i>"
+            "<i> HivaMusicOP helper Userbot not in this chat, Ask admin to send /play command for first time or add assistant manually</i>"
         )
         return     
     requested_by = message_.from_user.first_name
@@ -723,7 +723,7 @@ async def jiosaavn(client: Client, message_: Message):
     text = message_.text.split(" ", 1)
     query = text[1]
     res = lel
-    await res.edit(f"Rʸ͢͢THM🆇 Searching for `{query}` on jio saavn")
+    await res.edit(f"HivaMusicOP Searching for `{query}` on jio saavn")
     try:
         async with aiohttp.ClientSession() as session:
             async with session.get(
@@ -737,7 +737,7 @@ async def jiosaavn(client: Client, message_: Message):
         sduration = int(r[0]["duration"])
     except Exception as e:
         await res.edit(
-            "Rʸ͢͢THM🆇 Found Literally Nothing!, You Should Work On Your English."
+            "HivaMusicOP Found Literally Nothing!, You Should Work On Your English."
         )
         print(str(e))
         is_playing = False
@@ -750,8 +750,8 @@ async def jiosaavn(client: Client, message_: Message):
              ],                     
              [
                InlineKeyboardButton(
-                   text="Join Updates Channel",
-                   url='https://t.me/rythmXsupport')
+                   text="Join Channel",
+                   url='https://t.me/HIVAPUBLIC')
              ],
              [       
                InlineKeyboardButton(
