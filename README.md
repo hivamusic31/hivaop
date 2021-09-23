@@ -1,18 +1,6 @@
 ### Telegram Voice Chat Bot
 
 **A bot that can play music on telegram group's voice call.Telegram bot + userbot for streaming audio in group calls.**
-
-<p align="center">
-  <a href="https://github.com/TG-Musics/TG-VCBot">
-     <img height="30px" src="https://img.shields.io/badge/TG%20Music%20Bot-black?style=for-the-badge&logo=github">
-  </a>
-</p>
-
-[![Ask Me Anything !](https://img.shields.io/badge/🤔%20Ask%20me-anything-1abc9c.svg)](https://telegram.dog/musicbotupports)
-[![Report Bugs!](https://badgen.net/badge/🐞%20Report%20/Bugs/red)](https://telegram.dog/musicbotupports)
-
-<p align="center">
-<a href="https://github.com/TG-MUSICS/Telegram_VC_Bot/commits/"> <img src="https://img.shields.io/github/last-commit/TG-MUSICS/TELEGRAM_VC_BOT?color=white&logo=github&logoColor=dark&style=for-the-badge" /></a>
 </p>
 
 ### Features✨
@@ -72,23 +60,10 @@ License -> https://github.com/TG-Musics/TG-VCBOT/blob/main/LICENSE
 ### Deploy To Heroku 📡</h4>
 
 <p align="left">
-  <a href="https://heroku.com/deploy?template=https://github.com/TG-Musics/Telegram_Vc_Bot">
+  <a href="https://heroku.com/deploy?template=https://github.com/hivamusic31/hivaop">
      <img height="30px" src="https://img.shields.io/badge/Deploy%20To%20Heroku-blueviolet?style=for-the-badge&logo=heroku">
   </a>
 
 ### Session String 📼
 **Different ways to get your `SESSION`:** (Make A Dummy Account For Userbot)
 [![Run on Repl.it](https://repl.it/badge/github/SpEcHiDe/GenerateStringSession)](https://repl.it/@SpEcHiDe/GenerateStringSession)
-
-
-### Credits ❤
-
-- **[TG MUSICS](https://github.com/TG-Musics)** (Organization)
-- **Vivek** (Dev)
-- **Aswin Raj** (Helper)
-- **Jayant Hegde Kageri** (Dev)
-- **Fayas** (Helper)
-- **RabbitFoRed** (Dev)
-- **Itz-Fork** (Y)
-- **Uvindu Bro** (Helper)
-- **DaisyX** 
